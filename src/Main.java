@@ -19,7 +19,7 @@ public class Main {
         Boss boss = new Boss();
         boss.setHealth(300);
         boss.setDamage(50);
-        Weapon FireArms = new Weapon();
+        Weapon FireArms = new Weapon(WeaponType.ChemicalWeapon, "Газ: ");
         FireArms.setWeaponType(WeaponType.SteelArms);
         FireArms.setNameWeapons("Ак47: ");
         boss.setWeapon(FireArms);
@@ -27,6 +27,22 @@ public class Main {
 
 
 
+                Weapon skeletonWeapon1 = new Weapon(WeaponType.FireArms, "Ак47: ");
+                Skeleton skeleton1 = new Skeleton();
+                skeleton1.setHealth(300);
+                skeleton1.setDamage(23);
+                skeleton1.setWeapon(skeletonWeapon1);
+                skeleton1.setNumberOfBullets(30);
+                skeleton1.printInfo();
 
-    }
+                Weapon skeletonWeapon2 = new Weapon(WeaponType.SteelArms," Нож: ");
+                Skeleton skeleton2 = new Skeleton();
+                skeleton2.setHealth(100);
+                skeleton2.setDamage(37);
+                skeleton2.setWeapon(skeletonWeapon2);
+                skeleton2.setNumberOfBullets(15);
+                skeleton2.printInfo();
+
+            }
+
 }

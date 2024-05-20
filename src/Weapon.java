@@ -2,6 +2,12 @@ public class Weapon {
     private   WeaponType WeaponType;
  private String NameWeapons = ("нож, Ак47, Газ ");
 
+    public Weapon(WeaponType type, String name) {
+        this.WeaponType= type;
+        this.NameWeapons = name;
+    }
+
+
 
 
 
